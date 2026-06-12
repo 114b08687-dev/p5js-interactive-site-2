@@ -43,7 +43,7 @@ function mousePressed() {
 // 互動 2：鍵盤按下生成更多粒子
 function keyPressed() {
     if (!isRunning) return;
-    for (let i = 0; i < 20; i++) {
+    for (let i = 0; i < 50; i++) {
         particles.push(new Particle(mouseX, mouseY));
     }
 }
