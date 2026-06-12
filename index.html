@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p5.js 互動藝術網站</title>
+    <!-- 引入 p5.js 核心庫 -->
+    <script src="https://cloudflare.com"></script>
+    <!-- 引入自訂樣式與邏輯 -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Landing Page (提示與開始畫面) -->
+    <div id="landing-page">
+        <div class="card">
+            <h1>數位幾何粒子互動</h1>
+            <p>歡迎來到互動藝術空間。請閱讀以下操作提示：</p>
+            <ul class="instructions">
+                <li>🖱️ <b>移動滑鼠</b>：改變粒子的吸引核心位置。</li>
+                <li>🖱️ <b>點擊滑鼠</b>：隨機改變全畫面的粒子顏色。</li>
+                <li>⌨️ <b>按下鍵盤任一鍵</b>：瞬間增加大量粒子。</li>
+            </ul>
+            <button id="start-btn">進入體驗</button>
+        </div>
+    </div>
+
+    <!-- p5.js 畫布容器 -->
+    <div id="canvas-container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
