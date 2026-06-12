@@ -24,7 +24,7 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 10;
+    z-index: 999; /* 提高層級，確保蓋在畫布最上方 */
     transition: opacity 0.5s ease;
 }
 
@@ -84,10 +84,9 @@ p {
     box-shadow: 0 0 15px rgba(255, 75, 43, 0.6);
 }
 
-/* 隱藏類別 */
+/* 隱藏類別：核心修正，確保點擊後黑畫面徹底消失並讓滑鼠能互動 */
 .hidden {
-    opacity: 0;
-    pointer-events: none;
+    display: none !important;
 }
 
 /* 畫布容器置底 */
